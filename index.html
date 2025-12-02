@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sigmar+One&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="/images/logo.png" alt="zoo logo"></a>
+        </div>
+        <ul>
+            <li><a href="#animals">Våra Djur</a></li>
+            <li><a href="#toDo">Att Göra</a></li>
+            <li><a href="#info">Art Wiki</a></li>
+            <li><a href="#subscribe">Prenumerera</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="heroContent">
+            <h1>Välkommen Systementor Zoo</h1>
+            <h2>Ett zoo för de lite större djuren</h2>
+        </div>
+    </header>
+    <main>
+        <article id="animals">
+            <headers>
+                <h2>Våra djur</h2>
+            </header>
+            <section>
+                <ul>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </section>
+        </article>
+        <article id="toDo">
+            <header>
+                <h2>Att Göra</h2>
+            </header>
+            <section>
+                <h1>
+                    <img src="" alt="">
+                    Lekpark till barnen
+                </h1>
+                <h2>lorem ipsum</h2>
+            </section>
+            <section>
+                <h1>
+                    <img src="" alt="">
+                    Restauranger
+                </h1>
+                <h2>lorem ipsum</h2>
+            </section>
+            <section>
+                <h1>
+                    <img src="" alt="">
+                    Alla våra fantastiska djur
+                </h1>
+                <h2>lorem ipsum</h2>
+            </section>
+        </article>
+        <article id="Info">
+            <header>
+                <h2>Art Wiki</h2>
+            </header>
+            <table>
+                <caption>Art Table Wiki</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Art</th>
+                        <th>Ikon</th>
+                        <th>Vikt</th>
+                        <th>Länk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="subscribe">
+            <header>
+                <h2>Prenumerera på vårt nyhetsbrev</h2>
+                <p>Få de senaste uppdateringarna direkt i din inkorg.</p>
+            </header>
+            <form action="https://http-echo-server.azurewebsites.net" method="post">
+                <label for="name">Namn</label>
+                <input type="text" id="name">
+                <label for="surname">Efternamn</label>
+                <input type="text" id="surname">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="age">Ålder</label>
+                <input type="text" id="age">
+                <button type="submit">Prenumerera</button>
+            </form>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+:root{
+    --color-primary: #B3915F; /* knappar, länkar */
+    --color-secondary: #3C5B33; /* alternativknappar, highlights */
+    --color-background: #203321;
+    --color-text: #e4ecd7;
+    --color-heading: #c6e6c7;
+    --color-accent: #3ec672;  /* call-to-action */
+}
+/*----GLOBAL----*/
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--color-background);
+
+    font-family: "Noto Sans","Sigmar One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h1, h2, li, a{
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 400;
+    color: var(--color-heading);
+}
+p{
+    color: var(--color-text);
+}
+
+
+/*----GLOBAL END----*/
+
+/*----NAV----*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+nav ul li a{
+    text-decoration: none;   
+}
+nav ul li a:hover{
+    color: var(--color-accent);
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 100px;
+}
+
+/*----NAV END----*/
+
+/*---HEADER----*/
+.hero{
+    background-image: url(/images/hero.png);
+    height: 50vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.heroContent{
+    max-width: 50%;
+}
+
+/*---HEADER----*/
