@@ -17,7 +17,7 @@
         <ul>
             <li><a href="#animals">Our Creatures</a></li>
             <li><a href="#toDo">To Do</a></li>
-            <li><a href="#info">Species Wiki</a></li>
+            <li><a href="#wikiInfo">Species Wiki</a></li>
             <li><a href="#subscribe">Subscribe</a></li>
         </ul>
     </nav>
@@ -28,12 +28,12 @@
         </div>
     </header>
     <main>
-        <article id="animals" class="animals">
+        <article id="animals" class="animals myMargins">
             <headers>
-                <h2>Meet our firends</h2>
+                <h2 class="sectionHeading">Meet our friends</h2>
             </header>
             <section>
-                <ul>
+                <ul class="animalsList">
                     <li>
                         <img src="/images/Tyrannosaurus rex.png" alt="Tyrannosaurus rex close up">
                         <h3>Tyrannosaurus rex</h3>
@@ -51,63 +51,126 @@
                         <h3>Brachiosaurus</h3>
                     </li>
                     <li>
-                        <img src="/images/Pterosaurier.png" alt="Pterosaurier looking amused">
-                        <h3>Brachiosaurus</h3>
+                        <img src="/images/Pterosaurier.png" alt="Pterosaur looking amused">
+                        <h3>Pterosaur</h3>
                     </li>
-                    
+                    <li>
+                        <img src="/images/Ceratosaurus.png" alt="Ceratosaurus roaring in the wild">
+                        <h3>Ceratosaurus</h3>
+                    </li>
                 </ul>
             </section>
         </article>
         <article id="toDo">
             <header>
-                <h2>To Do</h2>
+                <h1 class="secondaryColor sectionHeading">To Do</h1>
             </header>
-            <section>
-                <h1>
-                    <img src="" alt="">
-                    Kids Playground
-                </h1>
-                <h2>lorem ipsum</h2>
-            </section>
-            <section>
-                <h1>
-                    <img src="" alt="">
-                    Restaurants
-                </h1>
-                <h2>lorem ipsum</h2>
-            </section>
-            <section>
-                <h1>
-                    <img src="" alt="">
-                    All our great creatures
-                </h1>
-                <h2>lorem ipsum</h2>
-            </section>
+            <ul>
+                <li>
+                    <img src="/images/playgroundIcon.png" alt="Icon of a playground">
+                    <h2 class="secondaryColor">
+                        Kids Playground
+                    </h2>
+                    <p class="secondaryColor">
+                        The Systementor Zoo playground is a vibrant, dinosaur‑themed adventure zone where children can climb, slide, 
+                        and explore safely. Surrounded by towering replicas of gentle herbivores, the area features interactive fossil digs, 
+                        jungle‑style swings, and shaded seating for families. It’s designed to spark imagination and let young explorers feel like 
+                        they’re playing in a prehistoric world.
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/restaurantIcon.png" alt="Icon of a restaurant">
+                    <h2 class="secondaryColor">
+                        Restaurants
+                    </h2>
+                    <p class="secondaryColor">
+                        At Systementor Zoo, dining is part of the adventure. Our restaurants are designed to let visitors enjoy delicious meals while 
+                        overlooking habitats where real dinosaurs roam. From family‑friendly buffets with prehistoric‑inspired dishes to themed cafés 
+                        serving quick bites, every venue offers a unique atmosphere. Guests can savor fresh food in safe viewing areas, combining 
+                        comfort with the thrill of being surrounded by living giants of the Jurassic world.
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/dinoIcon.png" alt="Icon of a trex">
+                    <h2 class="secondaryColor">
+                        Our great creatures
+                    </h2>
+                    <p class="secondaryColor">
+                        Systementor Zoo is home to a breathtaking collection of real dinosaurs, carefully cared for in expansive habitats that recreate 
+                        their prehistoric world. From towering herbivores like Brachiosaurus and Triceratops to formidable predators such as Tyrannosaurus 
+                        rex and Velociraptor, each species offers visitors a rare glimpse into Earth’s ancient past. Guests can witness these magnificent 
+                        creatures up close in safe viewing areas, experiencing the wonder and power of life from the Jurassic and Cretaceous eras.
+                    </p>
+                </li>
+            </ul>
+
         </article>
-        <article id="Info">
+        <article id="wikiInfo" class="myMargins wikiInfo">
             <header>
-                <h2>Species Wiki</h2>
+                <h1 class="sectionHeading">Species Wiki</h1>
             </header>
             <table>
-                <caption>Art Table Wiki</caption>
+                <caption>Species Wiki Table</caption>
                 <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Art</th>
-                        <th>Ikon</th>
-                        <th>Vikt</th>
-                        <th>Länk</th>
+                    <tr class="rowColor">
+                        <th>Genus</th>
+                        <th>Type Species</th>
+                        <th>Image</th>
+                        <th>Weight</th>
+                        <th>Height</th>
+                        <th>Wiki Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th class="rowpadding">Tyrannosaurus</th>
+                        <th>Tyrannosaurus rex</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Tyrannosaurus rex.png" alt="Tyrannosaurus rex close up" class="specieImg"></th>
+                        <th>~5-9tonnes</th>
+                        <th>~3.6-4m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Tyrannosaurus" class="wikiLink">Wiki Link</a></th>
                     </tr>
-                </tbody>
+                    <tr class="rowColor">
+                        <th>Velociraptor</th>
+                        <th>Velociraptor mongoliensis</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Velociraptor.png" alt="A running Velociraptor" class="specieImg"></th>
+                        <th>~15-20kg</th>
+                        <th>~0.5-0.7m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Velociraptor" class="wikiLink">Wiki Link</a></th>
+                    </tr>
+                    <tr>
+                        <th>Triceratops</th>
+                        <th>Ceratops horridus</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Triceratops.png" alt="A Triceratops in the forest" class="specieImg "></th>
+                        <th>~5-8tonnes</th>
+                        <th>~3m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Triceratops" class="wikiLink">Wiki Link</a></th>
+                    </tr>
+                    <tr class="rowColor">
+                        <th>Brachiosaurus</th>
+                        <th>Brachiosaurus altithorax</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Brachiosaurus.png" alt="Brachiosaurus making love" class="specieImg"></th>
+                        <th>~30-45tonnes</th>
+                        <th>~12-16m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Brachiosaurus" class="wikiLink">Wiki Link</a></th>
+                    </tr>
+                    <tr>
+                        <th>Pterosaur</th>
+                        <th>Pterodactylus antiquus</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Pterosaurier.png" alt="Pterosaur looking amused" class="specieImg"></th>
+                        <th>~10-250kg</th>
+                        <th>~3-5m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Pterosaur" class="wikiLink">Wiki Link</a></th>
+                    </tr>
+                    <tr class="rowColor">
+                        <th>Ceratosaurus</th>
+                        <th>Ceratosaurus nasicornis</th>
+                        <th class="tableHeadMinPaddingTB"><img src="/images/Ceratosaurus.png" alt="Ceratosaurus roaring in the wild" class="specieImg"></th>
+                        <th>~1tonne</th>
+                        <th>~3-3.5m</th>
+                        <th><a href="https://en.wikipedia.org/wiki/Ceratosaurus" class="wikiLink">Wiki Link</a></th>
+                    </tr>
+                </tbody> 
             </table>
         </article>
         <article id="subscribe">

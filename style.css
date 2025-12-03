@@ -2,9 +2,11 @@
     --color-primary: #B3915F; /* knappar, länkar */
     --color-secondary: #3C5B33; /* alternativknappar, highlights */
     --color-background: #203321;
-    --color-text: #e4ecd7;
+    --color-text: #ece6d7;
     --color-heading: #c6e6c7;
     --color-accent: #3ec672;  /* call-to-action */
+    --color-backgroundAlt: #ebe8d0;
+    --color-textAlt: #dfd8ce;
 }
 /*----GLOBAL----*/
 body{
@@ -30,10 +32,21 @@ h3, h4, h5, p{
 }
 p{
     color: var(--color-text);
+    font-size: 1.1rem;
 }
-main{
+.myMargins{
     margin-left: 10%;
     margin-right: 10%;
+}
+.secondaryColor{
+    color: var(--color-secondary);
+}
+.sectionHeading{
+    font-size: 2.6rem;
+}
+td,th{
+    padding: 1.5rem 2rem;
+    text-align: start;
 }
 
 
@@ -106,20 +119,112 @@ nav ul li a:hover{
 /*----ANIMALS----*/
 .animals{
     margin-top: 6rem;
+    margin-bottom: 16rem;
 }
-.animals ul{
+.animalsList{
+    margin-top: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    align-content:center;
+    gap: 1.5rem;
     padding: 0;
 }
-.animals ul li{
+.animalsList li{
     list-style-type: none;
 }
-.animals ul li img{
-    width: 350px;
+.animalsList li img{
+    max-width: 80%;
     border: 4px solid var(--color-primary);
     border-radius: 8px;
 }
+/* @media (min-width: 1800px){
+    .animalsList li img{
+        width: 450px;
+    }
+} */
 /*----ANIMALS END----*/
+
+/*----TO DO----*/
+#toDo{
+    background-color: var(--color-backgroundAlt);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#toDo ul{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 0;
+}
+#toDo ul li h2{
+    font-size: 1.8rem;
+}
+
+#toDo ul li img{
+    max-width: 100px;
+}
+#toDo ul li p{
+    line-height: 170%;
+    color: var(--color-background);
+}
+
+/*----TO DO END----*/
+
+
+/*----SPECIES WIKI----*/
+.wikiInfo{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+table{
+    background-color: var(--color-backgroundAlt);
+    color: var(--color-secondary);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-spacing: 0;
+}
+table caption{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    text-align: start;
+}
+table thead tr{
+    padding: 1rem;
+}
+.specieImg{
+  width: 100%;
+  height: 110px;
+  border-radius: 40%;
+  object-fit: contain;
+}
+.tableHeadMinPaddingTB{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.rowColor{
+    background-color: var(--color-textAlt);
+}
+.wikiLink{
+    color: var(--color-primary);
+}
+.wikiLink:hover{
+    color: var(--color-secondary);
+}
+.rowpadding{
+    margin-right: 8rem;
+
+}
+
+/*----SPECIES END----*/
