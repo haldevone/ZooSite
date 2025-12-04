@@ -112,7 +112,7 @@
             <table>
                 <caption>Species Wiki Table</caption>
                 <thead>
-                    <tr class="rowColor">
+                    <tr class="rowHeader">
                         <th>Genus</th>
                         <th>Type Species</th>
                         <th>Image</th>
@@ -173,21 +173,31 @@
                 </tbody> 
             </table>
         </article>
-        <article id="subscribe">
+        <article id="subscribe" class="subscribe myMargins">
             <header>
                 <h2>Subscribe on our newsletter</h2>
-                <p>Få de senaste uppdateringarna direkt i din inkorg.</p>
+                <p>Get the latest updates straight to your inbox.</p>
             </header>
             <form action="https://http-echo-server.azurewebsites.net" method="post">
-                <label for="name">Namn</label>
-                <input type="text" id="name">
-                <label for="surname">Efternamn</label>
-                <input type="text" id="surname">
-                <label for="email">Email</label>
-                <input type="text" id="email">
-                <label for="age">Ålder</label>
-                <input type="text" id="age">
-                <button type="submit">Prenumerera</button>
+                <div class="flexBetween">
+                    <div class="subContainer">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="subContainer">
+                        <label for="surname">Lastname</label>
+                        <input type="text" id="surname">
+                    </div>
+                </div>
+                <div class="subMailContainer">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="subAgeContainer">
+                    <label for="age">Age</label>
+                    <input type="text" id="age">
+                </div>
+                <button type="submit">Subscribe</button>
             </form>
         </article>
     </main>
